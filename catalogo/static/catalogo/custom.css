@@ -1,6 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body {
-    background-color: #f8f9fa;
+    background-color: #1a1a2e;
+    color: #e6e6e6;
+    font-family: 'Poppins', sans-serif;
 }
+
+.navbar {
+    background-color: #16213e !important;
+    border-bottom: 3px solid #e94560;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #e94560 !important;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #ff5c77 !important;
+}
+
 .card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #0f3460;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(233, 69, 96, 0.4);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #e94560;
+    font-size: 1.3rem;
+}
+
+.card-subtitle {
+    color: #a0a0a0 !important;
+    font-style: italic;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.btn {
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: #e94560;
+    border-color: #e94560;
+}
+
+.btn-primary:hover {
+    background-color: #d1304b;
+    border-color: #d1304b;
+}
+
+h2, h3 {
+    font
