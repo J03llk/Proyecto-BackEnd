@@ -1,0 +1,16 @@
+{% extends 'catalogo/base.html' %}
+
+{% block content %}
+<div class="card mt-4">
+    <div class="card-header bg-primary text-white">
+        <h3>{{ manga.titulo }}</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Categoría:</strong> {{ manga.categoria.nombre }}</p>
+        <p><strong>Precio:</strong> ${{ manga.precio }}</p>
+        <p><strong>Fecha de Publicación:</strong> {{ manga.fecha_publicacion }}</p>
+        <p><strong>En Emisión:</strong> {% if manga.en_emision %}Sí{% else %}No{% endif %}</p>
+        <a href="{% url 'manga_list' %}" class="btn btn-secondary mt-3">Volver al Catálogo</a>
+    </div>
+</div>
+{% endblock %}
